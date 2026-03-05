@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "./Container";
 
 export default function Footer() {
@@ -7,9 +8,11 @@ export default function Footer() {
         <div className="py-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-600">
           {/* Brand */}
           <div>
-            <h2 className="text-lg font-semibold text-gray-900">
-              PropertyFinder
-            </h2>
+            
+         <Link href="/" className="text-xl font-bold">
+                SmartProperty
+              </Link>
+          
             <p className="mt-2">
               Discover premium properties across Nigeria with ease.
             </p>
@@ -33,6 +36,14 @@ export default function Footer() {
                 <a href="/dashboard" className="hover:text-black">
                   Dashboard
                 </a>
+              </li>
+              <li>
+                <a href="/auth/login" className="hover:text-black">
+                Login</a>
+              </li>
+              <li>
+                <a href="/auth/register" className="hover:text-black">
+                Register</a>
               </li>
             </ul>
           </div>
